@@ -1,0 +1,39 @@
+{
+  "name": "fasilkom-docs",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "searchgen": "node ./scripts/search.js",
+    "docsgen": "node ./scripts/sidebar.js ./docs/",
+    "dev": "npm run build & npm run searchgen & npm run docsgen & npm run start",
+    "docusaurus": "docusaurus",
+    "start": "docusaurus start",
+    "build": "docusaurus build",
+    "swizzle": "docusaurus swizzle",
+    "deploy": "docusaurus deploy",
+    "serve": "docusaurus serve"
+  },
+  "dependencies": {
+    "@docusaurus/core": "^2.0.0-alpha.61",
+    "@docusaurus/preset-classic": "^2.0.0-alpha.61",
+    "@mdx-js/react": "^1.5.8",
+    "clsx": "^1.1.1",
+    "react": "^16.8.4",
+    "react-dom": "^16.8.4"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "mermaid": "^8.6.4"
+  }
+}
